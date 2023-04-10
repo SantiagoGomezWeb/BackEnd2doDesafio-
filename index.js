@@ -46,7 +46,6 @@ const productsManager = async () => {
     const product3Result = await manager.addProducts(newProduct3);
     console.log(product3Result);    
 
-
     console.log("**** Second Query ****");
     products = await manager.getProducts();
     console.log(products);
@@ -62,7 +61,6 @@ const productsManager = async () => {
     console.log("**** deleteProduct ****");
     products = await manager.deleteProduct(2);
     products ? console.log(products) : console.log("Product Not Found")
-
   }
   catch(error) {
     console.log(error);
